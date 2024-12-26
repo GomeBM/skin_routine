@@ -65,17 +65,20 @@ const MainPage = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:8000/api", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          ingredient1,
-          ingredient2,
-          mySkinType: skinType,
-        }),
-      });
+      const response = await fetch(
+        `${process.env.REACT_APP_BACKEND_BASEURL}/api`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            ingredient1,
+            ingredient2,
+            mySkinType: skinType,
+          }),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Failed to fetch the response from the server.");
