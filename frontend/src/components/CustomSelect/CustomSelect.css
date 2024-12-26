@@ -1,0 +1,42 @@
+.select-wrapper {
+  position: relative;
+  width: 200px; /* Match the width of the select element */
+}
+
+.select {
+  background-color: #ffddef;
+  border-radius: 41px;
+  border: none;
+  width: 100%;
+  font-size: 20px;
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 400;
+  padding: 10px 40px 10px 20px; /* Add right padding to make space for the icon */
+  -webkit-appearance: none; /* Hide the default chevron on Webkit-based browsers (Chrome, Safari) */
+  -moz-appearance: none; /* Hide the default chevron on Firefox */
+  appearance: none; /* Standard way to hide the default chevron */
+  background-color: #ffddef; /* Make sure this overrides default browser styles */
+  background-image: none; /* Remove any background image applied to the dropdown */
+}
+
+.select:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.select-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Ensure the icon doesn't interfere with select interactions */
+  color: #000; /* Set the desired color for the icon */
+  font-size: 20px; /* Adjust icon size */
+  font-weight: 100; /* Make the chevron thinner initially */
+  transition: font-weight 0.2s ease-in-out; /* Smooth transition for the font weight */
+}
+
+.select-wrapper:hover .select-icon {
+  font-size: 30px; /* Make the chevron thicker on hover */
+}

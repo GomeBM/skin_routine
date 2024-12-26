@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap");
+
+.main-page-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  position: relative; /* Enables layering with z-index */
+  overflow-x: hidden;
+}
+
+.gradient-overlay {
+  position: absolute; /* Makes it span the left part of the screen */
+  top: 0;
+  left: 0;
+  width: 58%; /* Covers 58% of the screen width */
+  height: 100%;
+  background-image: url("../../assets/gradient_background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0; /* Places it behind everything else */
+  max-width: 100%;
+}
+
+.gradient-section {
+  background-image: url("../../assets/gradient_background.png");
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1; /* Takes up half the width of the container */
+  z-index: 1; /* Ensures it is above the gradient overlay */
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.white-section {
+  background-color: #ffffff;
+  flex: 1; /* Takes up half the width of the container */
+  position: relative; /* Ensures it can stack above the gradient overlay */
+  z-index: 1; /* Ensures it is above the gradient overlay */
+  border-radius: 20px 0px 0px 20px; /* Adds the rounded corners */
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+}
+
+.gradient-sction-top {
+  flex: 1; /* 1/5 of the height */
+  display: flex;
+  align-items: center; /* Optional: Center content vertically */
+  justify-content: start;
+  padding: 5px;
+}
+
+.gradient-sction-middle {
+  flex: 2; /* 2/5 of the height */
+  display: flex;
+  justify-content: start; /* Optional: Center content horizontally */
+  align-items: center; /* Optional: Center content vertically */
+  border-top: 1px solid #ffffff; /* Top border */
+  border-bottom: 1px solid #ffffff; /* Bottom border */
+  border-left: none; /* No left border */
+  border-right: none; /* No right border */
+}
+
+.gradient-sction-bottom {
+  flex: 2; /* 2/5 of the height */
+  display: flex;
+  justify-content: center; /* Optional: Center content horizontally */
+  align-items: center; /* Optional: Center content vertically */
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.gradient-sction-middle-text {
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 55px;
+  text-align: left;
+  color: #000000;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.gradient-sction-middle-text span {
+  display: block; /* Makes each line behave like a block element */
+}
+
+.gradient-sction-bottom-text {
+  font-family: "Heebo", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: start;
+  color: #000000;
+  margin: 0;
+  padding-right: 60px;
+  padding-left: 20px;
+}
+
+.white-section-header {
+  font-family: "Heebo", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: start;
+  color: #000000;
+  margin: 0;
+  padding-top: 50px;
+}
+
+.white-section-selects {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.white-section-button {
+  padding: 10px;
+  font-size: 35px;
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 700;
+  margin-top: 60px;
+}
+
+.white-section-button:hover {
+  cursor: pointer;
+  color: #fe2a92;
+  text-decoration: underline;
+}
+
+.response-style-icon {
+  justify-self: start;
+  align-self: start;
+  border-radius: 50px;
+  width: 60px;
+  background-color: #ffddef;
+  border: 2px solid #00000030;
+}
+
+.response-style-icon:hover {
+  cursor: pointer;
+}
+
+.response-style-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start; /* Align children to the start (left) */
+  align-items: center; /* Center the button vertically */
+}
+
+.response-style-dropdown {
+  position: absolute;
+  top: 25px;
+  left: 54px;
+  background-color: #ffddef;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 10;
+  border: 2px solid #00000030;
+}
+
+@media screen and (max-width: 830px) {
+  .main-page-container {
+    flex-direction: column;
+  }
+
+  .gradient-overlay {
+    height: 60%;
+    width: 100%;
+  }
+
+  .gradient-sction-bottom-text {
+    text-align: center;
+  }
+
+  .gradient-sction-middle-text {
+    text-align: center;
+  }
+
+  .white-section-button {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .gradient-sction-middle {
+    justify-content: center;
+  }
+
+  .logo {
+    height: 45px;
+    margin-left: auto;
+    padding: 5px;
+    margin-right: 10px;
+  }
+
+  .white-section {
+    border-radius: 20px 20px 0px 0px;
+  }
+}

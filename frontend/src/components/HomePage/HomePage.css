@@ -1,0 +1,61 @@
+.homepage-container {
+  background-image: url("../../assets/skin-routine-cover-flipped.jpg");
+  background-size: cover; /* Ensures the image scales to cover the entire area */
+  background-position: center; /* Keeps the focus of the image in the center */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh; /* Ensures the container covers the full viewport height */
+  width: 100vw; /* Ensures the container covers the full viewport width */
+  display: flex;
+  flex-direction: column;
+  justify-content: start; /* Centers the child elements */
+  align-items: center; /* Aligns children horizontally to the center */
+  /* Add these to ensure responsiveness */
+  overflow: hidden; /* Prevents content overflow on very large screens */
+}
+
+.skin-routine-title-img {
+  max-width: 100%;
+  height: 150px;
+  display: block;
+  margin-left: 30px;
+  margin-top: 20px;
+  align-self: start;
+}
+
+.get-started-link {
+  align-self: start;
+  margin-top: 350px;
+  margin-left: 60px;
+  background: white;
+  border-radius: 10px;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+
+  /* Flexbox properties to center text vertically */
+  display: flex;
+  justify-content: center; /* Centers text horizontally */
+  align-items: center; /* Centers text vertically */
+}
+
+.get-started-link:hover {
+  cursor: pointer;
+  background: lightgrey;
+}
+
+.page-links {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 830px) {
+  .homepage-container {
+    background-image: url("../../assets/skin-routine-cover.jpg");
+    background-size: cover;
+    background-position: 25% 75%;
+    background-repeat: no-repeat;
+  }
+}

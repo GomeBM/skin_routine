@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap");
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 10px;
+}
+
+.popup {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  max-height: 80vh;
+  height: 300px;
+  overflow: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup p {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.popup-buttons {
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.ok-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ok-button:hover {
+  background: #0056b3;
+}
+
+.ok-button:focus {
+  outline: none;
+}
+
+.response-icon-safe {
+  font-size: 100px !important; /* Adjust size here */
+  color: green; /* Example for safe response */
+  margin-top: auto;
+}
+
+.response-icon-unsafe {
+  font-size: 100px !important;
+  color: red; /* Example for unsafe response */
+  margin-top: auto;
+}
+
+.response-icon-vary {
+  font-size: 100px !important;
+  color: orange; /* Example for varying response */
+  margin-top: auto;
+}
+
+.popup h1 {
+  font-family: "Heebo", sans-serif;
+}
+@media screen and (max-width: 830px) {
+  .popup {
+    height: 56vh;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    z-index: 1000;
+    padding: 10px;
+    padding: 0;
+  }
+}

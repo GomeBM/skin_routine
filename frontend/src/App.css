@@ -1,0 +1,46 @@
+/* Make sure html and body take up full height */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("./assets/gradient_background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Or any other background color you prefer */
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  height: 100vh;
+}
+
+/* Ensure .App takes full height */
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto; /* Allow scroll */
+  overflow-x: hidden;
+}
+
+/* Ensure background fills the scrollable areas as well */
+.App > * {
+  background-color: #ffffff; /* or any other background color you want */
+  flex: 1; /* Allows children to stretch */
+}
+
+/* Optional: Customize scroll */
+.App::-webkit-scrollbar {
+  width: 8px;
+}
+
+.App::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 4px;
+}
+
+.App::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}

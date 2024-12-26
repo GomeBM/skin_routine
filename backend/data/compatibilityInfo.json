@@ -1,0 +1,83 @@
+{
+  "azelaic acid": {
+    "AHA acids": "safe to mix",
+    "salicylic acid": "safe to mix",
+    "niacinamide": "safe to mix",
+    "vitamin C": "safe to mix",
+    "retinol": "not recommended",
+    "Bakuchiol": "safe to mix"
+  },
+  "niacinamide": {
+    "AHA acids": "safe to mix",
+    "salicylic acid": "A Very good mix, they will compliment each other! safe",
+    "vitamin C": "Opinions among experts vary, might cancel each other out, better do a patch test first!",
+    "retinol": "safe to mix",
+    "azelaic acid": "safe to mix",
+    "Bakuchiol": "safe to mix"
+  },
+  "salicylic acid": {
+    "AHA acids": "not recommended",
+    "azelaic acid": "safe to mix",
+    "vitamin C": "not recommended",
+    "retinol": "not recommended",
+    "niacinamide": "A Very good mix, they will compliment each other! safe",
+    "Bakuchiol": "safe to mix"
+  },
+  "AHA acids": {
+    "salicylic acid": "not recommended",
+    "azelaic acid": "safe to mix",
+    "vitamin C": "not recommended",
+    "retinol": "not recommended",
+    "niacinamide": "safe to mix",
+    "Bakuchiol": "safe to mix"
+  },
+  "retinol": {
+    "retinol": "Not recommended",
+    "azelaic acid": "not recommended",
+    "niacinamide": "safe to mix",
+    "salicylic acid": "not recommended",
+    "AHA acids": "not recommended",
+    "vitamin C": "Not recommended",
+    "Bakuchiol": "safe to mix"
+  },
+  "vitamin C": {
+    "azelaic acid": "safe to mix",
+    "niacinamide": "Opinions among experts vary, might cancel each other out, better do a patch test first!",
+    "salicylic acid": "not recommended",
+    "AHA acids": "not recommended",
+    "retinol": "not recommended",
+    "Bakuchiol": "safe to mix"
+  },
+  "Bakuchiol": {
+    "azelaic acid": "safe to mix",
+    "niacinamide": "safe to mix",
+    "salicylic acid": "safe to mix",
+    "AHA acids": "safe to mix",
+    "retinol": "safe to mix",
+    "vitamin C": "safe to mix"
+  },
+  "hyaluronic acid": {
+    "azelaic acid": "safe to mix",
+    "niacinamide": "safe to mix",
+    "salicylic acid": "safe to mix",
+    "AHA acids": "safe to mix",
+    "retinol": "safe to mix",
+    "vitamin C": "safe to mix"
+  },
+  "alpha arbutin": {
+    "azelaic acid": "safe to mix",
+    "niacinamide": "safe to mix",
+    "salicylic acid": "safe to mix",
+    "AHA acids": "safe to mix",
+    "retinol": "safe to mix",
+    "vitamin C": "safe to mix"
+  },
+  "peptides": {
+    "azelaic acid": "not recommended",
+    "niacinamide": "safe to mix",
+    "salicylic acid": "not recommended",
+    "AHA acids": "not recommended",
+    "retinol": "not recommended",
+    "vitamin C": "not recommended"
+  }
+}
