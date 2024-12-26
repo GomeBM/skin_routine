@@ -1,7 +1,7 @@
 import express from "express";
 import OpenAI from "openai";
 import dotenv from "dotenv";
-import compatibilityInfo from "../data/compatibilityInfo.json" assert { type: "json" };
+import compatibilityInfo from "../data/compatibilityInfo.json";
 dotenv.config();
 const router = express.Router();
 
