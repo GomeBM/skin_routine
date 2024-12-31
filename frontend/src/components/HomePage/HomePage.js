@@ -44,11 +44,10 @@ const HomePage = () => {
         className="skin-routine-title-img"
         alt="Skin Routine Title"
       />
-      <div className="page-links">
-        <Link to="/main-page" className="get-started-link">
-          Get Started
-        </Link>
-      </div>
+      <p className="bottom-text">Your personal ingredients mixing guide</p>
+      <Link to="/main-page" className="get-started-link">
+        GET STARTED
+      </Link>
     </motion.div>
   );
 };
